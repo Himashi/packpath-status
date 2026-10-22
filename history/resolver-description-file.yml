@@ -1,7 +1,7 @@
-url: https://packpath-resolver.star-lab-system.workers.dev/.well-known/gs1resolver
+url: https://id.starlabsystems.uk/.well-known/gs1resolver
 status: up
 code: 200
-responseTime: 138
-lastUpdated: 2026-10-22T01:08:10.789Z
+responseTime: 87
+lastUpdated: 2026-10-22T10:47:36.179Z
 startTime: 2026-10-21T18:24:13.196Z
 generator: Upptime <https://github.com/upptime/upptime>
