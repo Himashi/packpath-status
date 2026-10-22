@@ -4,17 +4,17 @@ repo: packpath-status
 sites:
   # Answered by the Worker alone, no storage read.
   - name: Resolver description file
-    url: https://packpath-resolver.star-lab-system.workers.dev/.well-known/gs1resolver
+    url: https://id.starlabsystems.uk/.well-known/gs1resolver
     maxResponseTime: 2000
   # Reads KV: the full resolve path for GS1's example GTIN, answered as a linkset.
   - name: Resolver lookup (linkset)
-    url: https://packpath-resolver.star-lab-system.workers.dev/01/09520123456788?linkType=linkset
+    url: https://id.starlabsystems.uk/01/09520123456788?linkType=linkset
     headers:
       - "Accept: application/linkset+json"
     maxResponseTime: 2000
   # What a phone scan gets: a 307 to the product page (200 if the checker follows it).
   - name: Resolver redirect (scan)
-    url: https://packpath-resolver.star-lab-system.workers.dev/01/09520123456788/10/ABC1?17=271231
+    url: https://id.starlabsystems.uk/01/09520123456788/10/ABC1?17=271231
     expectedStatusCodes:
       - 200
       - 307
